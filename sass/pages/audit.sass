@@ -1,0 +1,152 @@
+@import "../smart-grid"
+@import "../vars"
+p
+	margin: 0
+
+.ftscreen
+	+bgc('../../img/consulting__bg', center center)
+.info-txt
+	font-family: $clbr 
+	font-size: 24px
+	line-height: 1.333
+	color: #333
+	border: 20px solid #166d99
+	padding: 40px 40px 30px 65px
+	border-radius: 10px;
+	+col()
+	+size-lg(12)
+	+size-lg(12)
+	+size-md(12)
+	+size-sm(12)
+	+size-xs(12)
+	+sm(border, 10px solid #166d99 )
+	+sm(padding, 10px)
+	+xs(padding, 5px)
+	+xs(border, 10px solid #166d99 )
+	+xs(font-size, 12px )
+	b
+		font-size: 36px
+		color: #166d99
+.about
+	+wrapper()
+	+xs(margin-top, 0px)
+	padding: 100px 0
+	+from-to($break_xxs, $break_md)
+		padding: 20px 0
+	&__wrap
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		position: relative
+		margin-bottom: 60px
+		align-items: baseline
+		justify-content: space-between
+		flex-wrap: wrap
+		margin: 200px 0 60px 0
+		&-col
+			+col()
+			+size(3)
+			+size-xlg(4)
+			+size-lg(6)
+			+size-md(6)
+			+size-sm(12)
+			+size-xs(12)
+			text-align: left
+			display: flex
+			flex-direction: column
+			align-items: center
+			position: relative
+			+xs(padding, 43px 10px 10px 10px)
+		&-img
+			position: relative
+			width: 200px
+			height: 100px
+		p
+			color: #333
+			font-size: 30px
+			padding: 50px 0
+			font-family: $clbr
+		span
+			display: block
+		&-num
+			display: block
+			position: absolute
+			z-index: 1
+			font-size: 249px
+			font-weight: bold
+			left: -50px
+			top: -110px
+			font-family: $trjb
+			color: #166d99
+			+from-to($break_md, $break_xlg)
+				left: 0
+				top: -70px
+				font-size: 200px
+			+from-to($break_xxs, $break_md)
+				font-size: 125px
+				left: 0
+				top: -10px		
+.reasons
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	position: relative
+	margin-bottom: 100px
+	align-items: baseline
+	flex-wrap: wrap
+	&__col
+		+col()
+		+size(4)
+		+size-xlg(4)
+		+size-lg(4)
+		+size-md(6)
+		+size-sm(12)
+		+size-xs(12)
+		+size-xxs(12)
+		text-align: left
+		display: flex
+		align-items:  flex-start
+		position: relative
+		+from-to($break_xxs, $break_md)
+			padding: 43px 10px 10px 10px
+		&-img
+			position: relative
+		p
+			color: #333
+			font-size: 16px
+			padding-left: 60px
+			line-height: 1.875
+			font-family: $clbr
+img
+	+sm(max-width, 500%)
+	+xs(max-width, 40%)
+.offers__list
+	padding: 0px
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-wrap: wrap
+	p
+		color: #fff
+		font-size: 24px
+		font-family: $clbr
+		line-height: 2
+		b
+			font-size: 36px
+.offers
+	&__li
+		border-radius: 10px
+		background-color: #166d99
+		padding: 30px 45px
+		margin: 35px 0
+		list-style-type: none
+
+hr
+	margin: 100px 0 0
+
+			
+@import "../media"

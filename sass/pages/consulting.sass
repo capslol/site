@@ -1,0 +1,39 @@
+@import "../smart-grid"
+@import "../vars"
+
+p
+	margin: 0
+.ftscreen
+	+bgc('../../img/consulting__bg.png', center center)
+
+.info-txt
+	font-family: $clbr 
+	font-size: 24px
+	line-height: 1.333
+	color: #333
+	border: 20px solid #166d99
+	padding: 85px 40px 85px 65px
+	border-radius: 10px;
+	+col()
+	+size-lg(12)
+	+size-lg(12)
+	+size-md(12)
+	+size-sm(12)
+	+size-xs(12)
+	+sm(border, 10px solid #166d99 )
+	+sm(padding, 10px)
+	+xs(padding, 5px)
+	+xs(border, 10px solid #166d99 )
+	+xs(font-size, 12px )
+	b
+		font-size: 36px
+		color: #166d99
+img
+	+sm(max-width, 500%)
+	+xs(max-width, 40%)
+
+hr
+	margin: 100px 0 0
+
+			
+@import "../media"

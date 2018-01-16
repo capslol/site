@@ -1,0 +1,160 @@
+@import "../smart-grid"
+@import "../vars"
+
+p
+	margin: 0
+.ftscreen
+	+bgc('../../img/bg_buh.png', center center)
+.benefit-section
+	padding: 100px 0
+	+from-to($break_xxs, $break_md)
+		padding: 20px 0
+.info-txt
+	font-family: $clbr 
+	font-size: 24px
+	line-height: 1.333
+	color: #333
+	border: 20px solid #166d99
+	padding: 85px 40px 85px 65px
+	border-radius: 10px;
+	margin-bottom: 50px
+	+col()
+	+size-lg(12)
+	+size-lg(12)
+	+size-md(12)
+	+size-sm(12)
+	+size-xs(12)
+	+sm(border, 10px solid #166d99 )
+	+sm(padding, 10px)
+	+xs(padding, 5px)
+	+xs(border, 10px solid #166d99 )
+	+xs(font-size, 12px )
+	b
+		font-size: 36px
+		color: #166d99
+		+from-to($break_xxs, $break_md)
+			font-size: 20px
+
+.duties-section, .info
+	padding: 50px 0
+	border-bottom: 0px
+	box-shadow: 0 0 10px rgba(0,0,0,0.5)
+	+from-to($break_xxs, $break_md)
+		padding: 20px 0
+
+img
+	+sm(max-width, 500%)
+	+xs(max-width, 40%)
+.benefit
+	padding: 0px
+	display: flex
+	flex-wrap: wrap
+	align-items: flex-start
+	p
+		font-size: 24px
+		font-family: $clbr
+		line-height: 2
+		font-size: 18px
+		color: rgb(51, 51, 51)
+		font-weight: bold
+		font-style: italic
+		+from-to($break_xxs, $break_xs)
+			line-height: 1.3
+		b
+			font-size: 36px
+			text-transform: uppercase
+			line-height: 1.333
+			color: #fff
+			position: relative
+			z-index: 2
+			+from-to($break_xxs, $break_xs)
+				font-size: 26px
+	&__li
+		list-style-type: none
+		position: relative
+		display: flex
+		flex-direction: column
+		align-items: 
+		justify-content: center
+		margin: 50px 0
+		+col()
+		+size(4)
+		+from-to($break_xxs, $break_sm)
+			+size(12)
+		&-descr
+			border-radius: 10px
+			background-color: #166d99
+			display: flex
+			align-items: center
+			justify-content: center
+			padding: 0 20px
+			min-height: 312px
+		&-txt
+			border: 3px solid #166d99
+			color: #000
+			padding: 45px 20px 0 20px
+			margin: -8px 0
+			min-height: 355px
+			+from-to($break_xxs, $break_sm)
+				min-height: 225px
+		&-num
+			position: absolute
+			left: 0
+			top: -40px
+			z-index: 0
+			font-size: 305px
+			font-family: $trjb
+			font-weight: bold
+			background: linear-gradient(0deg, rgb(22, 109, 153) 24%, rgb(0, 51, 102) 100%)
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent
+			color: rgb(22, 109, 153)
+			+from-to($break_xxs, $break_md)
+				font-size: 250px
+hr
+	margin: 100px 0 0
+.tagg
+	border-left: 10px solid #174f71	
+	padding: 5px 20px
+	text-align: left
+	line-height: 1.85
+	display: block
+	+from-to($break_xxs, $break_md)
+		font-size: 16
+	b
+		font-size: 24px
+		+from-to($break_xxs, $break_md)
+			font-size: 16
+
+// debug-сетка 
+.grid 
+	+debug(rgba(132, 167, 247, 0.14), #333) 
+	top: 0 
+	display: none 
+.grid-check 
+	position: fixed 
+	z-index: 10 
+	top: 20px 
+	right: 20px 
+	width: 30px 
+	height: 30px 
+.grid-check:checked:after 
+	width: 185px; 
+	height: 28px; 
+	display: block; 
+	position: absolute; 
+	top: 32px; 
+	right: 0 
+	background: #9a9a9a; 
+	text-align: center; 
+	line-height: 28px; 
+	font-family: monospace; 
+	+xlg(content, "1101px - 1200px [xlg]") 
+	+lg(content, "961px - 1100px [lg]") 
+	+md(content, "781x - 960px [md]") 
+	+sm(content, "561px -780px [sm]") 
+	+xs(content, "320px - 560px [xs]") 
+.grid-check:checked+.grid 
+	display: block
+			
+@import "../media"
